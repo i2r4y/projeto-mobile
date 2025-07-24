@@ -2,18 +2,20 @@ import {
     StyleSheet,
     SafeAreaView,
     View,
-    Text
+    ScrollView,
 } from 'react-native'
 import Header from '../../Components/Header'
 import Categoria from '../../Components/Categorias'
+import ProdutosDestaque from '../../Components/ProdutosDestaque'
 
-export default function Home(){
-    return(
+export default function Home() {
+    return (
         <SafeAreaView style={styles.container}>
-            <View>
-            <Header/>
-            <Categoria/>
-            </View>
+            <ScrollView>
+                <Header />
+                <Categoria />
+                <ProdutosDestaque />
+            </ScrollView>
         </SafeAreaView>
     )
 }
@@ -24,9 +26,5 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 15,
         backgroundColor: '#FFF9F9'
-    },
-    textoTitulo: {
-        fontSize: 30,
-        fontWeight: 'bold'
     }
 })

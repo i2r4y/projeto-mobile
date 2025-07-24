@@ -2,12 +2,14 @@ import { StatusBar } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import RotasIndex from './src/Routes/index'
 import  AutProvider  from './src/Components/Contexts/Contexts'
-import {useFonts,Poppins_400Regular,Poppins_700Bold} from "@expo-google-fonts/poppins" 
+import {useFonts,Poppins_400Regular,Poppins_700Bold, Poppins_500Medium, Poppins_600SemiBold} from "@expo-google-fonts/poppins" 
 
 export default function App() {
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
-    Poppins_700Bold
+    Poppins_700Bold,
+     Poppins_500Medium,
+    Poppins_600SemiBold
   })
   if (!fontsLoaded) {
     return

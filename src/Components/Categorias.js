@@ -1,30 +1,30 @@
 
 import { View, Text, StyleSheet, Image } from "react-native";
 
-export default function Categoria (){
+export default function Categoria() {
     return (
         <View style={styles.Container}>
             <Text style={styles.Letras}>
-                Categorias em Destaque 
+                Categorias em Destaque
             </Text>
             <View style={styles.ContainerFiltro}>
                 <View style={styles.Categoria}>
-                    <Image source={require("../../assets/cat-roupa.png")}/>
+                    <Image source={require("../../assets/cat-roupa.png")} />
                     <Text style={styles.Texto}>Roupas</Text>
                 </View>
 
                 <View style={styles.Categoria}>
-                    <Image source={require("../../assets/cat-roupa.png")}/>
+                    <Image source={require("../../assets/cat-pelucia.png")} />
                     <Text style={styles.Texto}>Pelúcias</Text>
                 </View>
 
                 <View style={styles.Categoria}>
-                    <Image source={require("../../assets/cat-roupa.png")}/>
+                    <Image source={require("../../assets/cat-acessorio.png")} />
                     <Text style={styles.Texto}>Acessórios</Text>
                 </View>
 
                 <View style={styles.Categoria}>
-                    <Image source={require("../../assets/cat-roupa.png")}/>
+                    <Image source={require("../../assets/cat-papelaria.png")} />
                     <Text style={styles.Texto}>Papelaria</Text>
                 </View>
             </View>
@@ -32,35 +32,31 @@ export default function Categoria (){
     )
 }
 
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
+    Container: {
+        paddingHorizontal: 10,
+        paddingTop: 5,
+    },
+    Letras: {
+        fontSize: 26,
+        fontFamily: 'Poppins_400Regular',
+        color: '#AF4F5B',
+    },
+    ContainerFiltro: {
 
-    Container:{
-        flex:1,
-        paddingHorizontal:10,
-        paddingTop:5,
+        flexDirection: 'row',
+        gap: 20,
+        justifyContent: 'center',
+        paddingTop: 10,
     },
-    Letras:{
-        fontSize:26,
-        fontFamily:'Poppins_400Regular',
-        color:'#AF4F5B',
-    },
-    ContainerFiltro:{
-        flex:1,
-        flexDirection:'row',
-        gap:20,
-        justifyContent:'center',
-        paddingTop:10,
-    },
-    Categoria:{
-        flex:1,
-        alignItems:'center',
-        
-    },
-    Texto:{
-         fontSize:14,
-        fontFamily:'Poppins_400Regular',
-        color:'#AF4F5B',
+    Categoria: {
+        alignItems: 'center',
 
+    },
+    Texto: {
+        fontSize: 14,
+        fontFamily: 'Poppins_400Regular',
+        color: '#AF4F5B',
     }
 
 })

@@ -7,7 +7,7 @@ export default function AutProvider({ children }) {
     const [token, setToken] = useState('')
     const [loading, setLoading] = useState('')
 
-    const autenticado = false
+    const autenticado = true
 
     return(
         <AutContexts.Provider value={{autenticado}}>

@@ -5,41 +5,37 @@ const Header = () => {
     const larguraTela = Dimensions.get('window').width;
 
     return (
-        <View style={[styles.container, {width: larguraTela}]}>
+        <View style={[styles.container, { width: larguraTela }]}>
 
-           <View style={styles.containerMenu}>
-             <View style={styles.menu}>
-                <Image
-                    style={styles.styleMenu}
-                    source={require("../../assets/menu.png")}
-                />
-            </View>
+            <View style={styles.containerMenu}>
+                <View style={styles.menu}>
+                    <Image
+                        style={styles.styleMenu}
+                        source={require("../../assets/menu.png")}
+                    />
+                </View>
 
-            <View style={styles.logo}>
-                <Image
-                    style={styles.styleLogo}
-                    source={require("../../assets/logo.png")}
-                />
-            </View>
+                <View style={styles.logo}>
+                    <Image
+                        style={styles.styleLogo}
+                        source={require("../../assets/logo.png")}
+                    />
+                </View>
 
-            <View style={styles.lupa}>
-                <Image
-                    style={styles.styleLupa}
-                    source={require("../../assets/lupa.png")}
-                />
+                <View style={styles.lupa}>
+                    <Image
+                        style={styles.styleLupa}
+                        source={require("../../assets/lupa.png")}
+                    />
+                </View>
             </View>
-           </View>
 
             <View style={styles.banner}>
                 <Image
                     style={styles.styleBanner}
                     source={require("../../assets/banner.png")}
-                
                 />
-
             </View>
-
-       
         </View>
 
     )
@@ -52,7 +48,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         paddingTop: 20
-        
+
     },
     containerMenu: {
         flexDirection: 'row',
@@ -77,13 +73,13 @@ const styles = StyleSheet.create({
         height: 26
     },
 
-  styleBanner: {
-    width: 390,
-    height: 150,
-    resizeMode: 'contain',
-    borderRadius: 10,
-    padding:90,
-    alignItems: 'center',
-  },
+    styleBanner: {
+        width: 520,
+        height: 150,
+        resizeMode: 'contain',
+        borderRadius: 10,
+        padding: 90,
+        alignItems: 'center',
+    },
 
 })
